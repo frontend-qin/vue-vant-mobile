@@ -21,7 +21,7 @@ module.exports = {
     }
   },
   configureWebpack: {
-    name: "vue-vant-template",
+    name: "VueVantMobile",
     resolve: {
       alias: {
         "@": resolve("src")
