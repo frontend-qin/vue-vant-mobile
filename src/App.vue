@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <div class="container" :style="deviceHeight">
-      <transition name="van-slide-right">
-        <div class="warp">
-          <keep-alive>
-            <router-view />
-          </keep-alive>
-        </div>
+      <transition>
+        <keep-alive>
+          <router-view />
+        </keep-alive>
       </transition>
     </div>
     <van-tabbar
@@ -53,11 +51,3 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.container {
-  width: 100%;
-  .warp {
-    padding: 0 10px 50px 10px;
-  }
-}
-</style>

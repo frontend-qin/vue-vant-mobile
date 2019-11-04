@@ -7,13 +7,16 @@ import {
   CellGroup,
   Cell,
   Field,
-  Toast
+  Toast,
+  Image
 } from "vant";
-Vue.prototype.$toast = Toast;
+
 Vue.use(Button)
   .use(Field)
+  .use(Image)
   .use(Cell)
   .use(CellGroup)
   .use(Divider)
   .use(Tabbar)
   .use(TabbarItem);
+Vue.prototype.$toast = Toast;
