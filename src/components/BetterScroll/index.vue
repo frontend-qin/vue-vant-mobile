@@ -5,6 +5,7 @@
 </template>
 <script type="text/ecmascript-6">
 import BScroll from 'better-scroll'
+// https://ustbhuangyi.github.io/better-scroll/doc/zh-hans
 // https://zhuanlan.zhihu.com/p/27407024
 export default {
   props: {
