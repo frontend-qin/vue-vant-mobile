@@ -1,14 +1,16 @@
 import Vue from "vue";
+import FastClick from "fastclick";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "./plugins/vant.js";
+import "normalize.css/normalize.css";
 import "amfe-flexible";
 import "./styles/reset.less";
 import "./icons";
-import FastClick from "fastclick";
+import "./plugins/vant.js";
+import BetterScroll from "@/components/BetterScroll";
 FastClick.attach(document.body);
-
+Vue.component("scroll", BetterScroll);
 Vue.config.productionTip = false;
 
 new Vue({
@@ -16,5 +18,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
-
-console.log(process.env);

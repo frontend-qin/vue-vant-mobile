@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
+    "better-scroll": "^1.15.2",
     "core-js": "^3.3.2",
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
