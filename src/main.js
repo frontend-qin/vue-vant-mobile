@@ -5,12 +5,12 @@ import router from "./router";
 import store from "./store";
 import "normalize.css/normalize.css";
 import "amfe-flexible";
-import "./styles/reset.less";
+import "./styles/reset.css";
 import "./icons";
 import "./plugins/vant.js";
-import BetterScroll from "@/components/BetterScroll";
+
 FastClick.attach(document.body);
-Vue.component("scroll", BetterScroll);
+
 Vue.config.productionTip = false;
 
 new Vue({

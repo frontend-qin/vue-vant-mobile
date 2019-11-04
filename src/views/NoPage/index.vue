@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .nopage {
   display: flex;
   margin-top: 20%;

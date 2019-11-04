@@ -6,7 +6,6 @@
           <keep-alive>
             <router-view />
           </keep-alive>
-          <!-- <van-divider v-show="isShow">我是有底线的</van-divider> -->
         </div>
       </transition>
     </div>
@@ -54,7 +53,7 @@ export default {
   }
 };
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .container {
   width: 100%;
   .warp {

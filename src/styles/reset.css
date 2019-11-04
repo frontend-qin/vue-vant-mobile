@@ -1,7 +1,7 @@
 body {
   font-size: 12px !important;
 }
-// https://developer.mozilla.org/zh-CN/docs/Web/CSS/touch-action
+
 * {
   touch-action: pan-y;
 }
