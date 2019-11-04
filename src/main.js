@@ -5,7 +5,7 @@ import store from "./store";
 import "./plugins/vant.js";
 import "amfe-flexible";
 import "./styles/reset.less";
-import './icons'
+import "./icons";
 import FastClick from "fastclick";
 FastClick.attach(document.body);
 
@@ -16,3 +16,5 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+
+console.log(process.env);
