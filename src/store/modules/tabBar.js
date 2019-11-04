@@ -1,23 +1,30 @@
+import { tabRoutes } from "@/router";
+let paths = [];
+
+tabRoutes.forEach(item => paths.push(item.path));
+
+const [home, list, svg, mine] = paths;
+
 const state = {
   tabList: [
     {
       title: "首页",
-      path: "/home",
+      path: home,
       icon: "wap-home"
     },
     {
       title: "列表",
-      path: "/shop_list",
+      path: list,
       icon: "shop"
     },
     {
-      title: "购物车",
-      path: "/shop_car",
+      title: "SVG",
+      path: svg,
       icon: "shopping-cart"
     },
     {
       title: "我的",
-      path: "/mine",
+      path: mine,
       icon: "manager"
     }
   ]
