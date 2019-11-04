@@ -7,7 +7,7 @@ function resolve(dir) {
 const port = process.env.port || process.env.npm_config_port || 9538; // dev port
 
 module.exports = {
-  publicPath: "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/vue-vant-mobile" : "/",
   outputDir: "dist",
   assetsDir: "static",
   lintOnSave: process.env.NODE_ENV === "development",

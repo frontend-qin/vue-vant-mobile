@@ -723,7 +723,6 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: "history",
   base: "/",
   routes: routes
 });

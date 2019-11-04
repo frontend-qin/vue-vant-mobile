@@ -1,8 +1,7 @@
 {
-  "name": "vue-vant-template",
+  "name": "vue-vant-mobile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
   "scripts": {
     "start": "vue-cli-service serve",
     "devbuild": "vue-cli-service --mode=development build ",
