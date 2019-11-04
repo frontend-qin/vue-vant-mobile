@@ -684,7 +684,7 @@ new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
     return h(_App_vue__WEBPACK_IMPORTED_MODULE_5__["default"]);
   }
 }).$mount("#app");
-console.log(Object({"NODE_ENV":"development","VUE_APP_BASE_URL":"http://development.com","BASE_URL":"/"}));
+console.log(Object({"NODE_ENV":"development","BASE_URL":"/"}));
 
 /***/ }),
 
