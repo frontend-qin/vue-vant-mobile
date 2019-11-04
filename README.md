@@ -58,3 +58,7 @@ npm run build
 npm run preview
 
 ```
+## question
+
+1. svg图片不能自定义颜色?
+> 把自己的svg图片源码中的 fill属性和值去掉就可以了
