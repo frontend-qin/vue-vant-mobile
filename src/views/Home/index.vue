@@ -6,7 +6,12 @@
 </template>
 
 <script>
-export default {};
+import { asyncBanner } from "@/service/home";
+export default {
+  mounted() {
+    asyncBanner().then(res => console.log(res));
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
