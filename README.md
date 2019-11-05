@@ -153,10 +153,18 @@ npm run preview
 
 ```
 ## 插件
-<a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans">滚动插件 better-scroll</a>
-<a href="https://github.com/amfe/lib-flexible">移动端适配amfe-flexible</a>
-<a href="https://github.com/ftlabs/fastclick">移动端适配300毫秒延迟 fastclick</a>
-<a href="https://github.com/necolas/normalize.css">reset css</a>
-<a href="https://github.com/cuth/postcss-pxtorem">px自动转rem</a>
-<a href="https://youzan.github.io/vant">Vant-UI</a>
+<ul>
+   <li><a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans">滚动插件 better-scroll</a></li>
+   <li><a href="https://github.com/amfe/lib-flexible">移动端适配amfe-flexible</a></li>
+   <li><a href="https://github.com/ftlabs/fastclick">移动端适配300毫秒延迟 fastclick</a></li>
+   <li><a href="https://github.com/necolas/normalize.css">reset css</a></li>
+   <li><a href="https://github.com/cuth/postcss-pxtorem">px自动转rem</a></li>
+   <li><a href="https://youzan.github.io/vant">Vant-UI</a></li>
+</ul>
+
+
+
+
+
+
 
