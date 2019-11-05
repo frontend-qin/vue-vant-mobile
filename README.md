@@ -78,6 +78,42 @@ npm start
 > 直接去阿里巴巴图标库,找到自己需要的图片下载 svg 格式
 > 如果需要改颜色, 请打开 svg 图片源码, 删除源码中的 fill 属性
 
+## vuex 使用
+
+> 只需要在 store 下的 modules 里写对应文件的 state, muation ,action 就行,
+> 触发动作,需要用你的 "文件名/你的方法名" 作为 type 来触发
+
+## 例子
+
+假如 modules 里有个 app.js 文件, 需要触发点击加的操作
+app.js
+
+```javascript
+const state = {
+  num: 1
+}
+const mutations = {
+  add(state, payload) {
+    state.num += payload
+  }
+}
+const actions = {}
+export default {
+  namespaced: true,
+  state,
+  mutations,
+  actions
+}
+```
+
+> 如上, 那你调用的时候就需要下边这样触发
+
+type 的格式为: 文件名/方法名
+
+```javascript
+store.commit("app/add", 10)
+```
+
 ## 接口
 
 > 本模板默认配置的 "/api" 代理, 如果不需要代理的,直接去掉 vue.config.js 的 proxy 和它对应的值全部删除掉,

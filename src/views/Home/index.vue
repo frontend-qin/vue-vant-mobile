@@ -1,8 +1,5 @@
 <template>
-  <div class="wrapper">
-    hello
-    <svg-icon icon-class="vant-o"></svg-icon>
-  </div>
+  <div class="wrapper">首页</div>
 </template>
 
 <script>
