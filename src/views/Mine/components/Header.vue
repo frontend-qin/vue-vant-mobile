@@ -22,16 +22,17 @@ export default {};
 .header {
   width: 100%;
   height: 200px;
-  background-color: #eee;
   display: flex;
   align-items: center;
+  background: url("./../../../assets/image/timg.jpg") no-repeat;
+  background-size: 100% 100%;
   .avator {
     margin-left: 10%;
   }
   .user_infor {
     flex: 1;
     padding: 0 15px;
-    color: #fb7b04;
+    color: #000;
   }
 }
 </style>
