@@ -12,8 +12,8 @@ const toast = () =>
   });
 
 const instance = axios.create({
-  //baseURL: process.env.VUE_APP_BASE_URL, // 如果不配置代理,就用这个
-  baseURL: "/api", // 如果配置代理就用这个
+  baseURL: process.env.VUE_APP_BASE_URL, // 如果不配置代理,就用这个
+  //   baseURL: "/api", // 如果配置代理就用这个
   timeout: 3500
 });
 
