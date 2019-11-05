@@ -5,3 +5,9 @@ export const asyncBanner = () =>
     url: "/banner",
     methord: "GET"
   });
+
+export const asyncCan = () =>
+  request({
+    url: "/canji",
+    methord: "GET"
+  });

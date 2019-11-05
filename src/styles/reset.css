@@ -6,3 +6,6 @@ body {
 * {
   touch-action: pan-y;
 }
+.loading-icon {
+  padding: 0 !important;
+}

@@ -1,4 +1,4 @@
-import { tabRoutes } from "@/router";
+import tabRoutes from "@/router/tabRouter";
 let paths = [];
 
 tabRoutes.forEach(item => paths.push(item.path));

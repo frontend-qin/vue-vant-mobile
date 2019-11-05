@@ -1,40 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
-import asyncComponent from "@/utils/asyncLoad";
-
+// import hooks from "./hooks";
+import tabRoutes from "./tabRouter";
+import store from "@/store";
 Vue.use(VueRouter);
-export const tabRoutes = [
-  {
-    path: "/home",
-    component: asyncComponent(() => import("@/views/Home/index.vue")),
-    meta: {
-      index: 1
-    }
-  },
-  {
-    path: "/list",
-    //   高阶组件, 在网速慢的时候,页面加载不出来的时候,先展示一个loading
-    component: asyncComponent(() => import("@/views/List/index.vue")),
-    meta: {
-      index: 2
-    }
-  },
-  {
-    path: "/svg",
-    component: asyncComponent(() => import("@/views/Svg/index.vue")),
-    meta: {
-      index: 3
-    }
-  },
-  {
-    path: "/mine",
-    component: asyncComponent(() => import("@/views/Mine/index.vue")),
-    meta: {
-      index: 4
-    }
-  }
-];
 
 const routes = [
   {
@@ -54,6 +23,11 @@ const routes = [
 const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  store.commit("ajax/clear"); // 取消请求
+  next();
 });
 
 export default router;

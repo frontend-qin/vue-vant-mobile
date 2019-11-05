@@ -6,10 +6,11 @@
 </template>
 
 <script>
-import { asyncBanner } from "@/service/home";
+import { asyncBanner, asyncCan } from "@/service/home";
 export default {
   mounted() {
-    asyncBanner().then(res => console.log(res));
+    asyncBanner();
+    asyncCan();
   }
 };
 </script>
