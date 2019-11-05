@@ -153,9 +153,6 @@ npm run preview
 
 ```
 ## 插件
+<a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans">滚动插件 better-scroll</a>
 
-```bash
-# 滚动插件
-<a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans">better-scroll</a>
 
-```
