@@ -10,7 +10,9 @@
 <script>
 export default {
   methods: {
-    goHome() {}
+    goHome() {
+      this.$router.push("/home");
+    }
   }
 };
 </script>
