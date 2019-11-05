@@ -8,7 +8,10 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/login",
-    component: () => import("@/views/Login/index.vue")
+    component: () => import("@/views/Login/index.vue"),
+    meta: {
+      index: 0
+    }
   },
   {
     path: "/",
