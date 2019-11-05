@@ -152,3 +152,10 @@ npm run build
 npm run preview
 
 ```
+## 插件
+
+```bash
+# 滚动插件
+<a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans">better-scroll</a>
+
+```
