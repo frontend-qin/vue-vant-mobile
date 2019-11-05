@@ -8,11 +8,13 @@ import {
   Cell,
   Field,
   Toast,
-  Image
+  Image,
+  Loading
 } from "vant";
 
 Vue.use(Button)
   .use(Field)
+  .use(Loading)
   .use(Image)
   .use(Cell)
   .use(CellGroup)

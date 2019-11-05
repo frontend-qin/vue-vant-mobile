@@ -1,32 +1,35 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+import asyncComponent from "@/utils/asyncLoad";
+
 Vue.use(VueRouter);
 export const tabRoutes = [
   {
     path: "/home",
-    component: () => import("@/views/Home/index.vue"),
+    component: asyncComponent(() => import("@/views/Home/index.vue")),
     meta: {
       index: 1
     }
   },
   {
     path: "/list",
-    component: () => import("@/views/List/index.vue"),
+    //   高阶组件, 在网速慢的时候,页面加载不出来的时候,先展示一个loading
+    component: asyncComponent(() => import("@/views/List/index.vue")),
     meta: {
       index: 2
     }
   },
   {
     path: "/svg",
-    component: () => import("@/views/Svg/index.vue"),
+    component: asyncComponent(() => import("@/views/Svg/index.vue")),
     meta: {
       index: 3
     }
   },
   {
     path: "/mine",
-    component: () => import("@/views/Mine/index.vue"),
+    component: asyncComponent(() => import("@/views/Mine/index.vue")),
     meta: {
       index: 4
     }
