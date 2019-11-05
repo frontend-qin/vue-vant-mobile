@@ -126,6 +126,8 @@ store.commit("app/add", 10)
 baseURL: process.env.VUE_APP_BASE_URL,
 ```
 
+演示页面由于没有做代理转发,所以请求不到数据
+
 ```bash
 
 # 配置开发接口地址

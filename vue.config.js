@@ -18,17 +18,17 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      // 配置接口代理
+      "/api": {
+        target: process.env.VUE_APP_BASE_URL,
+        changeOrigin: true,
+        pathRewrite: {
+          "/api": ""
+        }
+      }
     }
-    // proxy: {
-    //   // 配置接口代理
-    //   "/api": {
-    //     target: process.env.VUE_APP_BASE_URL,
-    //     changeOrigin: true,
-    //     pathRewrite: {
-    //       "/api": ""
-    //     }
-    //   }
-    // }
   },
   configureWebpack: {
     name: "VueVantMobile",
