@@ -86,6 +86,7 @@ npm start
 ## 例子
 
 假如 modules 里有个 app.js 文件, 需要触发点击加的操作
+
 app.js
 
 ```javascript
